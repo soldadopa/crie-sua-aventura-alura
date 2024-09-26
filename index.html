@@ -7,42 +7,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+    <title>Em busca do pão as 3am</title>
 </head>
 <body>
+    <!--
+    <header style="vertical-align: top; text-align: center;">
+      <h1>Simulador de comprar pão as 3 da manhã</h1>
+    </header>
+    -->
     <main>
         <div class="passo ativo" id="passo-0">
-            <img src="img/cenario-passo0.png" alt="">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
+            <img src="img/rua-escura.jpg" alt="">
+            <p>Era um belo dia as 3 da manhã, e João, morto de fome, decide comprar 3 pães e uma coxinha.
+	    Porém, ele está em dúvida sobre qual lugar ir.</p>
+            <button class="btn-proximo" data-proximo="1">Padaria</button>
+            <button class="btn-proximo" data-proximo="7">Mercado</button>
         </div>
         <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
+            <p>João chega até a padaria, mas percebe que ela está fechada.
+	    "O que eu faço...", ele pensa.</p>
+            <button class="btn-proximo" data-proximo="2">Arrombar a padaria</button>
             <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
         </div>
         <div class="passo" id="passo-2">
-            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
-            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
+            <p>A polícia logo é chamada e João se desespera</p>
+            <button class="btn-proximo" data-proximo="5">Fugir para o mercado</button>
+            <button class="btn-proximo" data-proximo="3">Virar a esquina</button>
         </div>
         <div class="passo" id="passo-3">
-            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
-                localizada no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+            <p>Ao virar a esquina, João percebe que é um beco sem saída!</p>
+            <button class="btn-proximo" data-proximo="7">Fugir para o mercado</button>
         </div>
 
         <div class="passo" id="passo-4">
-            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
-            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
-                encontrado.</p>
+            <img src="img/quarto-escuro.jpg" alt="imagem voltando pra casa">
+            <p>João decide que a aventura é grande demais e volta para casa, infelizmente indo dormir com fome. :c</p>
+	    <button class="btn-proximo" data-proximo="0">Tentar novamente?</button>
         </div>
 
         <div class="passo" id="passo-5">
-            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
-                pista está no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+            <p>João despista geral e chega no oxxo perto dele :D</p>
+            <button class="btn-proximo" data-proximo="7">Estupendo!</button>
         </div>
 
         <div class="passo" id="passo-6">
@@ -51,9 +56,9 @@
         </div>
 
         <div class="passo" id="passo-7">
-            <p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio bifurcado.</p>
-            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
-            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
+            <p>João agora está no mercado, preparado para comprar seu pão e sua coxinha</p>
+            <button class="btn-proximo" data-proximo="9">Ir na padaria</button>
+            <button class="btn-proximo" data-proximo="10">Ir no açougue</button>
         </div>
 
         <div class="passo" id="passo-8">
@@ -62,21 +67,19 @@
         </div>
 
         <div class="passo" id="passo-9">
-            <p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam a entrada da
-                cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+            <p>João consegue 3 pães duros e uma coca sem gás!</p>
+            <button class="btn-proximo" data-proximo="11">Ir para casa</button>
         </div>
 
         <div class="passo" id="passo-10">
-            <p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais da cidade perdida
-                aqui.</p>
-            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
+            <p>João pede 3 pães para o açougueiro, que o xinga e fala para ele ir até a padaria do mercado</p>
+            <button class="btn-proximo" data-proximo="9">Ir para a padaria</button>
         </div>
 
         <div class="passo" id="passo-11">
-            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
-            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
-                este lugar</p>
+            <img src="img/pao.jpeg" alt="pão" id="img-pao">
+            <p>Chegando em casa, João devora deliciosamente seus pães.
+	    Agora, ele pode dormir em paz!</p>
         </div>
 
         <div class="passo" id="passo-12">
